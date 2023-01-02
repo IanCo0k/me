@@ -214,14 +214,18 @@
     text-align: center;
   }
 
+  .calendar a{
+    color: var(--dark);
+  } 
+
+  .post{
+    color: var(--dark);
+    background: var(--accent);
+  }
+
   .post:hover{
     transform: scale(1.2);
     transition: .1s ease-in-out;
-  }
-
-  .post{
-    background: var(--accent);
-    color: var(--dark);
   }
 
   .legend{
@@ -250,12 +254,28 @@
     margin-right: 10px;
   }
 
+  .title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title img{
+    width: 100%;
+  }
   
 
   @media screen and (max-width: 800px){
     .content{
       padding: 1.4em;
       font-size: 1em;
+      line-height: 1.2em;
+    }
+
+    .title{
+      line-height: 1.6em;
+      width: 100%;
     }
 
     .img{
