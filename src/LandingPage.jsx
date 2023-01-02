@@ -19,9 +19,8 @@ export default function LandingPage() {
         </div>
 
         <div className="cta">
-          <h3>This website is my creative outlet. All written content and web design is my original work. Thanks for stopping by :)</h3>
+          <h3>Hi love :) click buttons and tell me what breaks. I love you.</h3>
           <a href="/#/blogs"><button>READ</button></a>
-          <h3>This website is my creative outlet. All written content and web design is my original work. Thanks for stopping by :)</h3>
         </div>
       </div>
 
