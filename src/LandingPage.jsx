@@ -20,7 +20,7 @@ export default function LandingPage() {
 
         <div className="cta">
           <h3>This website is my creative outlet. All written content and web design is my original work. Thanks for stopping by :)</h3>
-          <a href="/blogs"><button>READ</button></a>
+          <a href="/#/blogs"><button>READ</button></a>
           <h3>This website is my creative outlet. All written content and web design is my original work. Thanks for stopping by :)</h3>
         </div>
       </div>

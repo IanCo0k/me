@@ -14,7 +14,7 @@ export default function Overlay() {
         <div className={open ? 'overlay on' : 'overlay'}>
         <div className="menu">
             <div><h1><a href="/">HOME</a></h1></div>
-            <div><h1><a href="/blogs">READ</a></h1></div>
+            <div><h1><a href="/#/blogs">READ</a></h1></div>
             <div><h1><a href="mailto: ianscook19@gmail.com">CONTACT</a></h1></div>
         </div>
     </div>
