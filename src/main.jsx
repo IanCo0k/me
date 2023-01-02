@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './Home'
-import { HashRouter } from 'react-router-dom';
+import LandingPage from './LandingPage'
+import Blogs from './Blogs';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <HashRouter>
-      <Home/>
-    </HashRouter>
+    <React.StrictMode>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage/>}/>
+          <Route path="/blogs" element={<Blogs/>}/>
+        </Routes>
+    </Router>
+    </React.StrictMode>
 )
