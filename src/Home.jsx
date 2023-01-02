@@ -1,30 +1,15 @@
-import React, { useState } from 'react'
-import './style.css';
+import React from 'react'
+import LandingPage from './LandingPage'
+import Blogs from './Blogs';
+import { Route, Routes } from 'react-router-dom';
 
 export default function Home() {
-  const [open, setOpen] = useState(false) // change the initial value to false
-
-  const toggleMenu = () => {
-    setOpen(!open)
-  }
-
   return (
-
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-      
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Book Reviews</li></a>
-          <a href="#"><li>Studies</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>About</li></a>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+      </Routes>
+    </div>
   )
 }
